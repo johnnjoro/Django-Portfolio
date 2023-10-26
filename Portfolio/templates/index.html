@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    {% load static %}
+
+    <!-- Boostrap CSS file -->
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+
+    <!-- Font awesome icons-->
+    <link rel="stylesheet" href="{% static 'CSS/all.min.css' %}">
+
+     <!-- Custom CSS file -->
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+
+     
+</head>
+<body>
+
+    <!-- =============================Start Header Area ===========================-->
+
+    <header class="header_area" id="header">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><h6>NJOROGE</h6></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ms-auto"></div>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active home" aria-current="page" href="#header">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link about" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link services" href="#services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link contact" href="#contact">Contact</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <!-- ==============End Header Area===========-->
+
+    <!--===============Start Main Area===========-->
+      <main class="site-main">
+        <!--===============Start Banner Area ===========-->
+        <section class="side-banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 site-title">
+                <h3 class="title-text">Hey</h3>
+                <h1 class="title-text text-uppercase">I AM JOHN</h1>
+                <h4 class="title-text text-uppercase">FULL STACK WEB DEVELOPER</h4>
+                <div class="site-buttons">
+                  <div class="d-flex flex-row flex-wrap">
+                    <button type="button" class="btn button primary-button mr-4 text-uppercase" >Hire Me</button>
+                    <button type="button" class="btn button secondary-button text-uppercase">Get Cv</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 banner-image">
+                <img src="{% static './IMG/banner/banner-image.png' %}" alt="Bannner Img" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--===============End Banner Area ===========-->
+
+        <!--====================About Area =================-->
+
+        <section class="about-area" id="about">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="about-image">
+                  <img src="{% static './IMG/about-us.png' %}" alt="About Us" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 about-title">
+                <h2 class="text-uppercase pt-5">
+                  <span>Let me </span>
+                  <span>introduce</span>
+                  <span>Myself</span>
+                </h2>
+                <div class="paragraph py-4 w-75">
+                  <p class="para">
+                    I'm John Njoroge, a proficient Full Stack Web Developer with expertise spanning front-end and back-end development. I possess a comprehensive skill set that includes HTML, CSS, JavaScript, and proficiency in various server-side languages and databases.
+                  </p>
+                  <p class="para">
+                    My talents encompass user interface design, server management, and database development, enabling me to create holistic and dynamic web solutions. My adaptability and commitment to staying current with the latest industry trends make me an invaluable asset in the digital realm.
+                  </p>
+                </div>
+                <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--====================End About Area===========-->
+
+        <!--====================Start Services Area===========-->
+        <section class="services-area" id="services">
+          <div class="container">
+            <div class="row col-lg-12 text-center services-title">
+              <h1 class="text-uppercase title-text" >SERVICES</h1>
+              <p class="para">
+                My services encompass a wide range of Front-End web development expertise, designed to provide comprehensive solutions for my clients.
+              </p>
+            </div>
+            <div class="container services-list">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="services">
+                    <div class="services-img text-center py-4">
+                      <img src="{% static './IMG/services/s1.png' %}" alt="Services-1">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="car-title text-uppercase font-roboto">Database Management</h5>
+                      <p class="card-text text-secondary">
+                        I design and manage databases to store and retrieve data efficiently, serving both web and mobile platforms. This involves selecting the appropriate database management system (SQL, NoSQL, etc.) and ensuring data security and integrity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="services">
+                    <div class="services-img text-center py-4">
+                      <img src="{% static './IMG/services/s2.png' %}" alt="Services-2">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="car-title text-uppercase font-roboto">UX/UI Design</h5>
+                      <p class="card-text text-secondary">
+                        My proficiency in front-end technologies enables me to design visually appealing and intuitive user interfaces. I prioritize user-centric design, ensuring that websites and applications offer a seamless and engaging experience to visitors.
+                        This includes responsive design, intuitive navigation, and interactive elements.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="services">
+                    <div class="services-img text-center py-4">
+                      <img src="{% static './IMG/services/s3.png' %}" alt="Services-3">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="car-title text-uppercase font-roboto">Full Stack Web Development</h5>
+                      <p class="card-text text-secondary">
+                        I excel in designing and building complete web applications. This includes creating user-friendly front-end interfaces using HTML, CSS, and JavaScript, as well as implementing the necessary server-side logic using languages like Node.js, Python, Ruby, or others.
+                        My expertise allows me to deliver end-to-end solutions to clients.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="services">
+                    <div class="services-img text-center py-4">
+                      <img src="{% static './IMG/services/s4.png' %}" alt="Services-4">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="car-title text-uppercase font-roboto">Digital Marketing</h5>
+                      <p class="card-text text-secondary">
+                        I provide comprehensive digital marketing services, which encompass various strategies like search engine optimization (SEO), content marketing, pay-per-click advertising (PPC), email marketing, and social media marketing.
+                        My expertise helps clients to build their online presence, increase brand awareness, and drive targeted traffic to their websites, ultimately leading to higher conversions and business growth.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--====================End Services Area===========-->
+
+
+        <!--====================Subscribe Me Area===========-->
+        <section class="subscribe-us-area contact-area" id="contact">
+          <div class="container subscribe">
+            <div class="row">
+              <div class="col-lg-12 text-center subscribe-title">
+                <h4 class="text-uppercase">Get Updates From Anywhere</h4>
+                <p class="para">
+                  Stay Informed and Never Miss Out - Subscribe to My Email Newsletter!
+                </p>
+              </div>
+            </div>
+            <div class="d-sm-flex justify-content-center">
+              <form class="w-50">
+                <div class="row d-flex flex-row flex-wrap">
+                  <div class="col input-textbox">
+                    <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="col">
+                    <div class="btn-submit">
+                      <button type="button" class="btn btn-success ">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!--====================End SUbscribe Area===========-->
+      
+      </main>
+
+    <!--===============End Main Area===========-->
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="">
+          <div class="site-logo text-center py-4">
+            <h6> Let's Connect</h6>
+          </div>
+          <div class="social text-center">
+            <a href="#"><i class="fab fa-facebook top"></i></a>
+            <a href="#"><i class="fab fa-instagram top1"></i></a>
+            <a href="#"><i class="fab fa-youtube top2"></i></a>
+            <a href="#"><i class="fab fa-twitter top3"></i></a>
+          </div>
+        <div class="copyrights text-center">
+          <p class="para">
+            copyright &copy;2023 All Rights Reserved
+            
+          </p>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jquery Js File-->
+    <script src="{% static 'JS/jquery.3.4.1.js' %}"></script>
+
+    <!-- Boostrap Js file -->
+    <script src="{% static 'JS/bootstrap.min.js'%}"></script>
+
+     <!--  custom js file  -->
+     <script src="{% static './js/main.js' %}"></script>
+
+</body>
+</html>

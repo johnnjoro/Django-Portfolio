@@ -1,0 +1,181 @@
+/* Import fonts from fonts.css file*/
+@import url(./fonts.css);
+
+/*Css Variables*/
+@import url(./partials/_variable.css);
+
+/* Global STyling */
+@import url(./partials/_global.css);
+
+
+/*Start navigation*/
+.header_area{
+    height: 100px;
+}
+
+h6{
+    font: normal 20 45px/20px proxima;
+    color: var(--title-color);
+    letter-spacing: 20px;
+    
+}
+.header_area .main-menu .navbar{
+    padding: 1rem 6rem;
+}
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 20px/20px verdana;
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+.header_area .main-menu .navbar-nav .nav-item .active{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header_area .main-menu .navbar-nav .nav-item a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/*End Navigation*/
+
+/* Banner Area */
+.site-main .side-banner{
+    background: url(../IMG/banner/home-banner.png) no-repeat 0% 50%;
+}
+.site-main .side-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.site-main .side-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+.site-main .side-banner .site-title h1{
+    color: whitesmoke;
+    font-size: 5rem;
+}
+.site-main .side-banner .site-title h4{
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+.site-main .side-banner .banner-image>img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+/* End Banner Area */
+
+/* Start About Area */
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+.site-main .about-area .about-title h2>span{
+    display: block;
+    font: normal bold 14px/60px ;
+    letter-spacing: 21px;
+}
+.site-main .about-area .about-title .paragraph>p{
+    padding: .2rem 0;
+}
+.site-main .side-banner{
+    background: url(../IMG/subscribe-bg.png);
+}
+
+/* End About Area */
+
+/* Services Area */
+.site-main .services-area{
+    padding: 2rem 2rem;
+}
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+}
+.site-main >.services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .6s ease;
+}
+.site-main >.services-area .services:hover{
+    box-shadow: var(--box-shadow);
+    
+}
+
+/* End Services Area */
+
+/* End Subscribe Me Area */
+.site-main .subscribe-us-area .subscribe{
+    background: url(../IMG/subscribe-bg.png);
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/30px var(--roboto);
+    color: whitesmoke;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 500 17px/20px var(--roboto);
+
+}
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: url('/IMG/subscribe-bg.png');
+    border: white  3px solid;
+    color: white;
+    padding: .7rem 2rem;
+    transition: box-shadow .6s ease;
+}
+.site-main .subscribe-us-area .subscribe form .btn-submit button:hover{
+    box-shadow: var(--box-shadow);
+}
+/* End Subscribe Me Area */
+
+/* Footer Area */
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../IMG/footer-bg.png) no repeat;
+}
+footer.footer-area .social a>i{
+    font-size: 50px;
+    padding: 2rem;
+    color: var(--primary-color);
+}
+footer.footer-area .social a:hover>.top{
+    color: black;
+}
+footer.footer-area .social a:hover>.top1{
+    color: #FD1D1D;
+}
+footer.footer-area .social a:hover>.top2{
+    color: red;
+}
+footer.footer-area .social a:hover>.top3{
+    color: #00acee;
+}
+
+/* End Footer Area */
